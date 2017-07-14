@@ -1,0 +1,15 @@
+*{ margin:0; padding:0;}
+li{ list-style:none;}
+a{ text-decoration:none;}
+img{ vertical-align:top;}
+input{ outline:none;}
+textarea{ resize:none;}
+.clearFix:after{content:'';display:block;clear:both;}
+
+.xw h1{margin:0 10px 0 10px;}
+
+.ul li{float:left;margin:0 70px 5px 10px;font-size:16px;font-weight:bold;}
+
+.ul1 li{float:left;margin:0 5px 5px 10px;}
+.ul1 .hgli{float:right;margin-right:30px;}
+.ul2{border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding:10px 0 10px 0;}

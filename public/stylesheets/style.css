@@ -1,0 +1,48 @@
+*{ margin:0; padding:0;}
+li{ list-style:none;}
+a{ text-decoration:none;}
+img{ vertical-align:top;}
+input{ outline:none;}
+textarea{ resize:none;}
+.clearFix:after{content:'';display:block;clear:both;}
+
+html{font-size:50px;}
+
+header{width:6.4rem;}
+header .bdlogo{width:100%;height:0.48rem;background:url(/images/bdlogo.png) no-repeat center #3e98f0;background-size:0.66rem 0.24rem;border-bottom:0.02rem solid #5dabf0;}
+.bdlogo a:nth-child(1),.bdlogo a:nth-child(2){float:left;display:block;width:0.34rem;height:100%;margin-left:0.17rem;}
+.bdlogo a:nth-child(3),.bdlogo a:nth-child(4){float:right;display:block;width:0.34rem;height:100%;margin-right:0.17rem;}
+.bdlogo a:nth-child(1){background:url(/images/icon.png) no-repeat ;background-size:0.45rem 5.2rem;background-position:center 0.08rem;}
+.bdlogo a:nth-child(2){background:url(/images/icon.png) no-repeat ;background-size:0.45rem 5.2rem;background-position:center -4.78rem;}
+.bdlogo a:nth-child(3){background:url(/images/icon.png) no-repeat ;background-size:0.45rem 5.2rem;background-position:center -1.08rem;}
+.bdlogo a:nth-child(4){background:url(/images/icon.png) no-repeat ;background-size:0.45rem 5.2rem;background-position:center -1.65rem;}
+
+
+header .bt{position:relative;height:0.6rem;}
+header .bt ul{height:0.5rem;background:#3e98f0;position:absolute;top:0;left:0;overflow:hidden;}
+header ul li{float:left;width:0.5rem;line-height:0.4rem;margin-left:0.22rem;text-align:center;}
+header ul li a{display:block;font-size:0.2rem;color:#fff;}
+.on{border-bottom:0.02rem solid #fff;}
+header span{display:block;position:absolute;right:0.24rem;top:0.64rem;width:0.16rem;height:0.16rem;background:url(/images/nav.png) no-repeat -0.16rem -0.16rem;background-size:0.32rem;}
+body .div{display:none;}
+body .show{display:block;}
+
+.tp{position:relative;margin-top:-0.1rem;}
+.tp ul{width:6.4rem;height:3.57rem;}
+.tp ul li{position:relative;}
+.tp img{width:6.4rem;height:3.57rem;}
+.tp ul li span{color:#fff;font-size:0.2rem;position:absolute;bottom:0.1rem;left:0.2rem;}
+.tp .swiper-pagination{position:absolute;bottom:0.1rem;right:0.12rem;}
+
+/*.xd{position:absolute;bottom:0.1rem;right:0.12rem;}
+.xd span{float:left;width:0.05rem;height:0.05rem;background:#ccc;border-radius:50%;margin:0 0.1rem 0 0.1rem;}
+.xd .on1{background:#fff;width:0.08rem;height:0.08rem;}*/
+
+.nr img{float:left;width:2.04rem;height:1.18rem;margin:0.3rem 0.18rem 0.24rem 0.18rem;}
+.nr div{float:left;margin-top:0.3rem;}
+.nr div p{font-size:0.2rem;margin-top:0.3rem;}
+.nr div span{display:block;font-size:0.12rem;color:#ccc;margin-top:0.1rem;}
+
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title></title>
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/stylesheets/baidu.css" rel="stylesheet" />
+
+    
+</head>
+<body>
+	<div class="panel panel-default">
+  		<div class="xw panel-body">
+    	   <h1>百度新闻后台管理器</h1>
+  		</div>
+	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+				<div class="panel panel-default">
+  					<div class="panel-body">
+    				    <h2>新闻发布器</h2>
+  					</div>
+            <h4>新闻标题</h4>
+            <input type="text" id="newsTitle" class="form-control" placeholder="请输入新闻标题">
+            <h4>新闻正文</h4>
+            <textarea id="" class="form-control" rows="3"></textarea>
+            <h4>新闻图片地址</h4>
+            <input type="text" id="newsImg" class="form-control" placeholder="请输入图片地址">
+            <h4>新闻来源</h4>
+            <input type="text" id="" class="form-control" placeholder="请输入新闻来源">
+            <h4>新闻日期</h4>
+            <input type="text" id="newsTime" class="form-control" placeholder="请输入新闻日期">
+            <h4>新闻标签</h4>
+            <select id="newstype" class="form-control">
+                <option>推荐</option>
+                <option>百家</option>
+                <option>本地</option>
+                <option>娱乐</option>
+                <option>社会</option>
+                <option>军事</option>
+                <option>女人</option>
+                <option>搞笑</option>
+                <option>互联网</option>
+                <option>科技</option>
+                <option>生活</option>
+                <option>国际</option>
+                <option>国内</option>
+                <option>体育</option>
+                <option>汽车</option>
+                <option>财经</option>
+                <option>房产</option>
+                <option>时尚</option>
+                <option>教育</option>
+                <option>游戏</option>
+                <option>旅游</option>
+                <option>人文</option>
+                <option>创意</option>
+            </select>
+            <button type="button" id="btn1" class="btn btn-primary">提交</button>
+            
+            
+				</div>
+      </div>
+      <div class="col-md-6">
+				<div class="panel panel-default">
+  				  <div class="panel-body">
+    				  <h2>新闻列表</h2>
+  					</div>
+            <ul class="ul clearFix">
+              <li>新闻编号</li>
+              <li>新闻标题</li>
+              <li>新闻时间</li>
+              <li>操作</li>
+            </ul>
+            <ul class="ul2">
+              <li>
+               <%for(var i=0;i<datas.length;i++){%> 
+                <ul class="ul1 clearFix">
+                  <li><%= datas[i].newsid%></li>
+                  <li><%= datas[i].newsTitle%></li>
+                  <li><%= datas[i].newsTime%></li>
+                  <li class="hgli">
+                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" id='delete' aria-labelledby="myModalLabel">删除 </button>
+                  <button type="button" id="btn2" class="btn btn-danger">更改</button> 
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">你确认要删除此条新闻吗？</h4>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                          <button type="button" id="delete1" class="btn btn-info" data-dismiss="modal">确认</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                  </li>
+                </ul>
+               <%}%>
+              </li>
+              
+
+
+            </ul>
+				</div>
+      </div>
+ 		</div>
+ 	</div>
+
+<script type="text/javascript" src="/javascripts/jquery.min.js"></script> 
+<script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="/javascripts/houtai.js"></script>
+</body>
+</body>
+</html>
